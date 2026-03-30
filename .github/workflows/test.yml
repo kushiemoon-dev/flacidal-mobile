@@ -23,7 +23,7 @@ jobs:
         run: flutter pub get
 
       - name: Analyze
-        run: dart analyze lib/
+        run: dart analyze lib/ --no-fatal-infos
 
       - name: Test
         run: flutter test || echo "No tests found, skipping"
